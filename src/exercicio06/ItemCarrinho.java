@@ -1,5 +1,7 @@
 package exercicio06;
 
+import java.math.BigDecimal;
+
 public class ItemCarrinho {
     private final Produto produto;
     private final int quantidade;
@@ -20,11 +22,14 @@ public class ItemCarrinho {
         return quantidade;
     }
 
-    public Dinheiro getSubtotal() {
-        return new Dinheiro(
-                produto.getPreco().getValor().multiply(new java.math.BigDecimal(quantidade)),
-                produto.getPreco().getMoeda()
-        );
+    public Dinheiro getTotal() {
+        BigDecimal total = produto.getPreco().getValor().multiply(BigDecimal.valueOf(quantidade));
+        return new Dinheiro(total, produto.getPreco().getMoeda());
+    }
+
+    @Override
+    public String toString() {
+        return produto.getNome() + " x" + quantidade + " -> " + getTotal();
     }
 }
 
