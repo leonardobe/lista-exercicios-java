@@ -93,7 +93,7 @@ Cada exercício possui sua própria implementação em Java, com menus interativ
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/lista-exercicios-java.git
+   git clone https://github.com/leonardobe/lista-exercicios-java.git
    cd lista-exercicios-java
    ```
 
