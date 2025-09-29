@@ -100,7 +100,7 @@ Cada exercício possui sua própria implementação em Java, com menus interativ
 2. Compile o exercício desejado (exemplo para o exercício 1):
 
    ```bash
-   cd exercicio01-encapsulamento
+   cd exercicio01
    javac Main.java
    ```
 
